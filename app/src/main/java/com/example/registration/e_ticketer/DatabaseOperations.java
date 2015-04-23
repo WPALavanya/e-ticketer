@@ -15,7 +15,7 @@ public class DatabaseOperations extends SQLiteOpenHelper {
     public static final int database_version = 1;
 
     public String CREATE_QUERY = "CREATE TABLE " + TableData.TableInfo.TABLE_NAME + "(" + TableData.TableInfo.USER_NAME + "TEXT," + TableData.TableInfo.FIRST_NAME + "TEXT," + TableData.TableInfo.LAST_NAME + "TEXT," + TableData.TableInfo.NIC + "TEXT," +  TableData.TableInfo.PASSWORD+"TEXT ); ";
-
+//Add
     public DatabaseOperations(Context context){
         //  super(context,name,factory,version);
         super(context, TableData.TableInfo.DATABASE_NAME,null,database_version);
